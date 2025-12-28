@@ -12,7 +12,7 @@ export default function Contact() {
           📧 <strong>Email:</strong> sharemarket@gmail.com
         </p>
         <p>
-          📞 <strong>Phone:</strong> +91 98765 43210
+          📞 <strong>Phone:</strong> +91 97901 70278
         </p>
         <p>
           📍 <strong>Address:</strong><br />
