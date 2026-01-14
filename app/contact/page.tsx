@@ -9,15 +9,16 @@ export default function Contact() {
       {/* CONTACT DETAILS */}
       <div className="bg-white p-6 rounded-lg shadow space-y-4">
         <p>
-          📧 <strong>Email:</strong> sharemarket@gmail.com
+          📧 <strong>Email:</strong> traderkarthi5@gmail.com
         </p>
         <p>
           📞 <strong>Phone:</strong> +91 89037 38487
         </p>
         <p>
           📍 <strong>Address:</strong><br />
-          Share Market Academy,<br />
-          Chennai, Tamil Nadu, India
+          12/1 Anantha nagar, I Street
+          100 feet road, Near PLP mahal<br />
+          Karaikudi 630001, Tamil Nadu, India
         </p>
       </div>
 
