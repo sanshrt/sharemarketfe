@@ -9,6 +9,11 @@ type CourseDetails = {
   fees: string;
   timings?: string[];
   extra?: string[];
+  steps?: {
+    title: string;
+    items: string[];
+  }[];
+
 };
 
 const COURSES: Record<string, CourseDetails> = {
@@ -112,6 +117,29 @@ const COURSES: Record<string, CourseDetails> = {
       "Understand execution settings and capital allocation",
     ],
   },
+  "other-services": {
+    title: "Other Services",
+    description:
+      "Professional trading services including stock analysis, intraday levels, calls & universal trading setup.",
+    duration: "Ongoing / Monthly",
+    fees: "Pay per Service",
+    topics: [
+      "Stock Recommendations – ₹100 per stock (Entry, Target & Stoploss)",
+      "Intraday Trading Levels – ₹300 / Month (NIFTY & BANKNIFTY)",
+      "Intraday Calls – ₹1020 / Month (NIFTY & BANKNIFTY)",
+      "Intraday Calls – ₹1020 / Month (Crude Oil: 5:30 PM – 10 PM)",
+      "Universal Trading Setup – ₹3000 (Intraday, Swing & Long Term)",
+    ],
+    extra: [
+      "Planned trades with Risk-Reward > 1:2",
+      "2–3 quality calls per day",
+      "Index & commodity focused guidance",
+      "Demo session for universal setup",
+      "Clear entry, stop-loss & target strategy",
+    ],
+  },
+
+
 };
 
 export default async function CoursePage({
@@ -202,7 +230,7 @@ export default async function CoursePage({
         {/* CTA */}
         <div className="text-center">
             <a
-                href="tel:+919790170278"
+                href="tel:+918903738487"
                 className="bg-green-700 hover:bg-green-800 text-white px-10 py-4 rounded-xl text-lg font-semibold transition shadow-lg inline-block"
             >
                 Enroll Now

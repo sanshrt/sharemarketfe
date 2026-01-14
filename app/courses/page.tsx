@@ -23,6 +23,18 @@ const courses = [
       "Institutional trading concepts, liquidity & order blocks",
     slug: "smart-money-concept",
   },
+  {
+    title: "Other Services",
+    description:
+      "Stock analysis, intraday levels, calls & universal trading setup",
+    slug: "other-services",
+  },
+  {
+    title: "Tradetron Strategy (GPM 3)",
+    description:
+      "Subscribe and deploy the GPM 3 automated trading strategy on Tradetron",
+    slug: "tradetron-strategy",
+  },
 ];
 
 export default function CoursesPage() {

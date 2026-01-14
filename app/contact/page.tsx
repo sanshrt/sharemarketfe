@@ -12,7 +12,7 @@ export default function Contact() {
           📧 <strong>Email:</strong> sharemarket@gmail.com
         </p>
         <p>
-          📞 <strong>Phone:</strong> +91 97901 70278
+          📞 <strong>Phone:</strong> +91 89037 38487
         </p>
         <p>
           📍 <strong>Address:</strong><br />
@@ -21,33 +21,6 @@ export default function Contact() {
         </p>
       </div>
 
-      {/* CONTACT FORM */}
-      <form className="bg-white p-6 rounded-lg shadow space-y-4 max-w-md">
-        <input
-          type="text"
-          placeholder="Your Name"
-          className="w-full p-2 border border-green-300 rounded"
-        />
-
-        <input
-          type="email"
-          placeholder="Your Email"
-          className="w-full p-2 border border-green-300 rounded"
-        />
-
-        <textarea
-          placeholder="Your Message"
-          rows={4}
-          className="w-full p-2 border border-green-300 rounded"
-        />
-
-        <button
-          type="submit"
-          className="bg-green-700 text-amber-50 px-4 py-2 rounded hover:bg-green-800"
-        >
-          Send Message
-        </button>
-      </form>
     </div>
   );
 }
