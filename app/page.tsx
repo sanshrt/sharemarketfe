@@ -14,17 +14,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center items-center 
                           gap-6 sm:gap-16 md:gap-24">
 
-            <Image
-              src="/logo.jpeg"
-              alt="Company Logo"
-              width={260}
-              height={260}
-              className="object-contain
-                        w-40 h-40
-                        sm:w-48 sm:h-48
-                        md:w-64 md:h-64
-                        lg:w-72 lg:h-72"
-            />
+           
 
 
             <Image

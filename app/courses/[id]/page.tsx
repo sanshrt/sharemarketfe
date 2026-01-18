@@ -22,7 +22,7 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Learn professional trading using pure price action for Intraday, Swing, Long-Term & SIP investments.",
     duration: "15 Hours",
-    fees: "₹10,000 → ₹7,500",
+    fees: "₹10,000 offer fees ₹7,500",
     topics: [
       "Basics of Share Market",
       "Bull & Bear Market",
@@ -45,7 +45,7 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Master Futures & Options trading with strategies, option chain analysis and hedging techniques.",
     duration: "10 Hours",
-    fees: "₹7,500 → ₹5,000",
+    fees: "₹7,500 offer fees ₹5,000",
     topics: [
       "Equity & Derivative Market",
       "Futures & Options",
@@ -65,7 +65,7 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Advanced live seminar focusing on real-time market examples.",
     duration: "3 Hours",
-    fees: "₹5,000 → ₹3,000",
+    fees: "₹5,000 offer fees ₹3,000",
     topics: [
       "Candlestick Reading",
       "Trend Analysis",
@@ -82,7 +82,7 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Trade like institutions by understanding liquidity, order blocks and market manipulation.",
     duration: "10 Hours",
-    fees: "₹7,500 → ₹5,000",
+    fees: "₹7,500 offer fees ₹5,000",
     topics: [
       "Market Structure",
       "Liquidity",
@@ -195,16 +195,8 @@ export default async function CoursePage({
             </p>
           </div>
 
-          {course.timings && (
-            <div className="bg-white p-6 rounded-xl shadow">
-              <p className="text-sm text-gray-500 mb-2">Timings</p>
-              <ul className="text-gray-700 text-sm space-y-1">
-                {course.timings.map((time, i) => (
-                  <li key={i}>• {time}</li>
-                ))}
-              </ul>
-            </div>
-          )}
+          
+          
         </div>
 
         {/* TOPICS */}
