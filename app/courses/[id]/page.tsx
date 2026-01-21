@@ -222,7 +222,7 @@ export default async function CoursePage({
         {/* CTA */}
         <div className="text-center">
             <a
-                href="tel:+918903738487"
+                href="https://forms.gle/qonBgKk4bafJJP4SA"
                 className="bg-green-700 hover:bg-green-800 text-white px-10 py-4 rounded-xl text-lg font-semibold transition shadow-lg inline-block"
             >
                 Enroll Now
