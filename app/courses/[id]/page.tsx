@@ -113,7 +113,7 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Subscribe and deploy the GPM 3 automated trading strategy on Tradetron",
     duration: "Intraday Option Buying",
-    fees: "Enroll for detail",
+    fees: "Rs.300/Month",
     
     methods: ["Online", "/", "Offline"],
     topics: [

@@ -110,8 +110,8 @@ export default function Home() {
           {/* Seminar */}
           <CourseCard
             href="/courses/price-action-seminar"
-            title="Price Action Seminar"
-            desc="Live seminar with advanced market strategies."
+            title="Professional Stock Market Concepts"
+            desc="In-depth coverage of institutional technical analysis tools such as market structure, demand–supply, and multi-time-frame analysis."
           />
 
           {/* SMC */}
