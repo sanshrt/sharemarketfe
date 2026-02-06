@@ -67,9 +67,9 @@ const COURSES: Record<string, CourseDetails> = {
   },
 
   "price-action-seminar": {
-    title: "Price Action Seminar",
+    title: "Professional Stock Market Concepts",
     description:
-      "Advanced live seminar focusing on real-time market examples.",
+      "In-depth coverage of institutional technical analysis tools such as market structure, demand–supply, and multi-time-frame analysis.",
     duration: "3 Hours",
     fees: "₹5,000",
     offerFees: "₹3,000",
