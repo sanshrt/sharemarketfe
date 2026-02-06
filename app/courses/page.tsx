@@ -24,13 +24,13 @@ const courses = [
     slug: "smart-money-concept",
   },
   {
-    title: "Other Services",
+    title: "Premium Services",
     description:
-      "Stock analysis, intraday levels, calls & universal trading setup",
+      "Stock analysis, intraday levels, Calls Service & universal trading setup",
     slug: "other-services",
   },
   {
-    title: "Tradetron Strategy (GPM 3)",
+    title: "Algo Trade Strategy",
     description:
       "Subscribe and deploy the GPM 3 automated trading strategy on Tradetron",
     slug: "tradetron-strategy",

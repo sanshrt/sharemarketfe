@@ -7,6 +7,8 @@ type CourseDetails = {
   topics?: string[];
   duration: string;
   fees: string;
+  offerFees?: string;
+  methods: string[];
   timings?: string[];
   extra?: string[];
   steps?: {
@@ -22,7 +24,9 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Learn professional trading using pure price action for Intraday, Swing, Long-Term & SIP investments.",
     duration: "15 Hours",
-    fees: "₹10,000 offer fees ₹7,500",
+    fees: "₹10,000 ",
+    offerFees: "₹7,500",
+    methods: ["Online", "/", "Offline"],
     topics: [
       "Basics of Share Market",
       "Bull & Bear Market",
@@ -45,7 +49,9 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Master Futures & Options trading with strategies, option chain analysis and hedging techniques.",
     duration: "10 Hours",
-    fees: "₹7,500 offer fees ₹5,000",
+    fees: "₹7,500",
+    offerFees: "₹5,000",
+    methods: ["Online","/", "Offline"],
     topics: [
       "Equity & Derivative Market",
       "Futures & Options",
@@ -65,7 +71,10 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Advanced live seminar focusing on real-time market examples.",
     duration: "3 Hours",
-    fees: "₹5,000 offer fees ₹3,000",
+    fees: "₹5,000",
+    offerFees: "₹3,000",
+    methods: ["Online", "/","Offline"],
+
     topics: [
       "Candlestick Reading",
       "Trend Analysis",
@@ -82,7 +91,10 @@ const COURSES: Record<string, CourseDetails> = {
     description:
       "Trade like institutions by understanding liquidity, order blocks and market manipulation.",
     duration: "10 Hours",
-    fees: "₹7,500 offer fees ₹5,000",
+    fees: "₹7,500",
+    offerFees: "₹5,000",
+    methods: ["Online", "/","Offline"],
+
     topics: [
       "Market Structure",
       "Liquidity",
@@ -97,11 +109,13 @@ const COURSES: Record<string, CourseDetails> = {
   },
   
   "tradetron-strategy": {
-    title: "Deploy a Strategy on Tradetron",
+    title: "Algo Trade strategy",
     description:
-      "Step-by-step guide to subscribe and deploy the GPM 3 trading strategy on the Tradetron platform, for both paper trading and live trading.",
-    duration: "Self-paced",
-    fees: "Free / Included",
+      "Subscribe and deploy the GPM 3 automated trading strategy on Tradetron",
+    duration: "Intraday Option Buying",
+    fees: "Enroll for detail",
+    
+    methods: ["Online", "/", "Offline"],
     topics: [
       "Sign Up / Log In on Tradetron",
       "Subscribe to GPM 3 Strategy",
@@ -117,27 +131,32 @@ const COURSES: Record<string, CourseDetails> = {
       "Understand execution settings and capital allocation",
     ],
   },
+
   "other-services": {
-    title: "Other Services",
-    description:
-      "Professional trading services including stock analysis, intraday levels, calls & universal trading setup.",
-    duration: "Ongoing / Monthly",
-    fees: "Pay per Service",
-    topics: [
-      "Stock Recommendations – ₹100 per stock (Entry, Target & Stoploss)",
-      "Intraday Trading Levels – ₹300 / Month (NIFTY & BANKNIFTY)",
-      "Intraday Calls – ₹1020 / Month (NIFTY & BANKNIFTY)",
-      "Intraday Calls – ₹1020 / Month (Crude Oil: 5:30 PM – 10 PM)",
-      "Universal Trading Setup – ₹3000 (Intraday, Swing & Long Term)",
-    ],
-    extra: [
-      "Planned trades with Risk-Reward > 1:2",
-      "2–3 quality calls per day",
-      "Index & commodity focused guidance",
-      "Demo session for universal setup",
-      "Clear entry, stop-loss & target strategy",
-    ],
-  },
+  title: "Premium Services",
+  description:
+    "Advanced trading services offering stock recommendations, precise intraday levels, expert trading calls, and a complete universal trading system for consistent market performance.",
+  duration: "Ongoing / Monthly",
+  fees: "Depends on Service Selected",
+
+  methods: ["Online", "/", "Offline"],
+
+  steps: [
+    {
+      title: "Our Services",
+      items: [
+        "Service 1: Stock Recommendations – Get expert stock analysis with precise Entry, Target & Stop-Loss levels.",
+        "Service 2: Intraday Trading Levels (NIFTY & BANKNIFTY) – High-precision daily index levels for confident execution.",
+        "Service 3: Intraday Calls (NIFTY & BANKNIFTY) – Expert intraday calls with accurate entry, exit & risk control.",
+        "Service 4: Intraday Calls – Crude Oil (5:30 PM – 10 PM) – Specialized evening session calls with structured targets & risk management.",
+        "Service 5: Universal Trading Setup – Complete system for Intraday, Swing trading & Long-Term investing."
+      ],
+    },
+    
+  ],
+}
+
+
 
 
 };
@@ -193,6 +212,22 @@ export default async function CoursePage({
             <p className="text-xl font-semibold text-green-700">
               {course.fees}
             </p>
+
+            {course.offerFees && (
+              <>
+                <p className="text-sm text-gray-500 mt-2">Offer Price</p>
+                <p className="text-xl font-semibold text-red-600">
+                  {course.offerFees}
+                </p>
+              </>
+            )}
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow text-center">
+            <p className="text-sm text-gray-500">Methods</p>
+            <p className="text-xl font-semibold text-green-700">
+              {course.methods}
+            </p>
           </div>
 
           
@@ -218,6 +253,31 @@ export default async function CoursePage({
             </div>
           </div>
         )}
+        {/* STEPS (Only for courses like Other Services) */}
+        {course.steps && (
+          <div className="bg-white p-8 rounded-xl shadow">
+            <h2 className="text-2xl font-semibold text-green-800 mb-6">
+              Steps
+            </h2>
+
+            <div className="space-y-6">
+              {course.steps.map((step, i) => (
+                <div key={i}>
+                  <h3 className="text-lg font-semibold text-green-700 mb-3">
+                    {i + 1}. {step.title}
+                  </h3>
+
+                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    {step.items.map((item, j) => (
+                      <li key={j}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
 
         {/* CTA */}
         <div className="text-center">

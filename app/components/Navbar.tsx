@@ -16,17 +16,19 @@ export default function Navbar() {
 
         {/* Centered Bigger Logo with proper space */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <Image
-            src="/logo.jpeg"
-            alt="Company Logo"
-            width={260}
-            height={260}
-            className="object-contain
-                      w-36 h-36
-                      sm:w-44 sm:h-44
-                      md:w-52 md:h-52"
-          />
-        </div>
+  <Image
+    src="/logo.jpeg"
+    alt="Company Logo"
+    width={320}
+    height={320}
+    className="object-contain
+               w-44 h-44
+               sm:w-56 sm:h-56
+               md:w-64 md:h-64
+               lg:w-72 lg:h-72"
+  />
+</div>
+
 
 
 

@@ -33,11 +33,11 @@ export default function Home() {
 
           {/* CONTENT BELOW */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-green-800 leading-tight drop-shadow-md">
-            Learn Trading with Confidence 📈
+            Learn Stock Market
           </h1>
 
           <p className="text-green-900 text-lg sm:text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto">
-            Gain practical skills in price action, technical analysis, derivatives,
+             Comprehensive training in price action, technical analysis, derivatives,
             and disciplined trading strategies. Learn to trade effectively across
             Intraday, Swing, and Long-Term investments.
           </p>
@@ -96,15 +96,15 @@ export default function Home() {
           {/* Price Action */}
           <CourseCard
             href="/courses/price-action"
-            title="Price Action Trading"
-            desc="Intraday, Swing, Long Term & SIP strategies using price action."
+            title="Price action Course"
+            desc="Learn Professional institutional price action with smart money concepts for consistent market execution."
           />
 
           {/* Derivative */}
           <CourseCard
             href="/courses/derivative-market"
             title="Derivative Market (F&O)"
-            desc="Futures & Options strategies, hedging, and analysis."
+            desc=" Comprehensive training in F&O trading, hedging, and derivatives analysis."
           />
 
           {/* Seminar */}
@@ -124,15 +124,15 @@ export default function Home() {
           {/* Tradetron */}
           <CourseCard
             href="/courses/tradetron-strategy"
-            title="Tradetron Strategy (GPM 3)"
+            title="Algo trade Strategy (GPM 3)"
             desc="Subscribe & deploy automated trading strategy on Tradetron."
           />
 
           {/* Other Services */}
           <CourseCard
             href="/courses/other-services"
-            title="Other Services"
-            desc="Stock analysis, intraday levels, calls & universal setup."
+            title="Premium Services"
+            desc="Stock analysis, intraday levels, Calls Service & universal setup."
           />
 
         </div>
